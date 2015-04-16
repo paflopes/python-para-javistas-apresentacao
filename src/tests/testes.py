@@ -15,3 +15,7 @@ class ConversorNumeroRomanoTest(unittest.TestCase):
     def testDeveEntenderOSimboloV(self):
         numero = self.conversor.converte("V")
         self.assertEqual(5, numero)
+
+    def testDeveEntenderDoisSimbolosComoII(self):
+        numero = self.conversor.converte("II")
+        self.assertEqual(2, numero)
