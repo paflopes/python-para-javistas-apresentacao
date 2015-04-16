@@ -1,4 +1,5 @@
 import unittest
+from src.main.conversor import ConversorDeNumeroRomano
 
 __author__ = 'phillipe'
 
