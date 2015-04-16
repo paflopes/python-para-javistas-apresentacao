@@ -23,3 +23,7 @@ class ConversorNumeroRomanoTest(unittest.TestCase):
     def testDeveEntenderQuatroSimbolosDoisADoisComoXXII(self):
         numero = self.conversor.converte("XXII")
         self.assertEqual(22, numero)
+
+    def testDeveEntenderNumerosComoIX(self):
+        numero = self.conversor.converte("IX")
+        self.assertEqual(9, numero)
