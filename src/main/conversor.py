@@ -14,4 +14,9 @@ class ConversorDeNumeroRomano:
     }
 
     def converte(self, numero):
-        return self.tabela.get(numero)
+        acumulador = 0
+
+        for letra in numero:
+            acumulador += self.tabela[letra]
+
+        return acumulador
